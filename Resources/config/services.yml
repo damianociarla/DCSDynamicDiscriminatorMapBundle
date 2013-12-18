@@ -1,0 +1,10 @@
+parameters:
+    dynamic_discriminator_map.listener.doctrine_event_listener.class: DCS\DynamicDiscriminatorMapBundle\Listener\DoctrineEventListener
+
+services:
+    dynamic_discriminator_map.listener.doctrine_event_listener:
+        class: %dynamic_discriminator_map.listener.doctrine_event_listener.class%
+        arguments: [%dynamic_discriminator_map.mapping%]
+        tags:
+            - { name: doctrine.event_listener, event: loadClassMetadata }
+
