@@ -1,5 +1,5 @@
 {
-    "name": "damianociarla/dcs-dynamic-discriminator-map-bundle",
+    "name": "damianociarla/dynamic-discriminator-map-bundle",
     "description": "DCSDynamicDiscriminatorMapBundle simplifies the use of Doctrine Single Table Inheritance mapping strategy in Symfony2.",
     "type": "library",
     "keywords": [
@@ -21,7 +21,7 @@
         "doctrine/doctrine-bundle": "1.2.*"
     },
     "autoload": {
-        "psr-0": { "DCS\\DCSDynamicDiscriminatorMapBundle": "" }
+        "psr-0": { "DCS\\DynamicDiscriminatorMapBundle": "" }
     },
-    "target-dir": "DCS/DCSDynamicDiscriminatorMapBundle"
+    "target-dir": "DCS/DynamicDiscriminatorMapBundle"
 }
