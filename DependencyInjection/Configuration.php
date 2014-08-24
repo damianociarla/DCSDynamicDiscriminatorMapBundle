@@ -23,12 +23,11 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('mapping')
-                    ->isRequired()
-                    ->requiresAtLeastOneElement()
                     ->useAttributeAsKey('name')
                     ->prototype('array')
                         ->children()
                             ->scalarNode('entity')
+                                ->isRequired()
                             ->end()
                             ->arrayNode('map')
                                 ->useAttributeAsKey('name')
@@ -37,6 +36,7 @@ class Configuration implements ConfigurationInterface
                             ->end()
                         ->end()
                     ->end()
+                    ->defaultValue(array())
                 ->end()
             ->end();
 
